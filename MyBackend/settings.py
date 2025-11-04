@@ -53,6 +53,9 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = [
+    'http://192.168.30.152:8081',
+]
 
 ROOT_URLCONF = 'MyBackend.urls'
 
